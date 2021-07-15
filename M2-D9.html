@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you will have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Even the most experienced designers need inspiration.
+Spend some time surfing the web researching the best way of representing the albums you love.
+Could be the Amazon way, the Spotify or Apple music way or any other music collection out there.
+
+HINT: Manage your time in order to finish the structure and responsiveness before focusing on details.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+
+    <style>
+      /* EXERCISE 1
+            For every Album we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+
+            to make sure you give every album the same consistent appearance.
+         */
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body class="bg-light">
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Paul's Jukebox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+          <div class="jumbotron">
+            <h1 class="display-4">Pauls Jukebox!</h1>
+            <p class="lead">Explore my favourite genres and artists.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+
+        <div class="container-fluid mt-4 "> 
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 img-thumbnail ">
+                  <div>
+                    <img src="pantera pic.jpg" alt="panterapic" class="img-thumbnail">
+                    <div class="container text-center">
+                      <div class="row">
+                        Cowboys From Hell
+                      </div>
+                      <div class="row">
+                        Pantera
+                      </div>
+                      <div class="row">
+                        Album Duration: 57:44
+                      </div>
+                      <div class="row">
+                        Metal
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <h3>Tracklist</h3>
+                        </div>
+                        <div class="row">
+                          "Cowboys from Hell"
+                        </div>
+                        <div class="row">
+                          "Primal Concrete Sledge"
+                        </div>
+                        <div class="row">
+                          "Psycho Holiday"
+                        </div>
+                        <div class="row">
+                          "Heresy"
+                        </div>
+                        <div class="row">
+                          "Cemetery Gates"
+                        </div>
+                        <div class="row">
+                          "Domination"
+                        </div>
+                        <div class="row">
+                          "Shattered"
+                        </div>
+                        <div class="row">
+                          "Clash with Reality"
+                        </div>
+                        <div class="row">
+                          "Medicine Man"
+                        </div>
+                        <div class="row">
+                          "Message in Blood"
+                        </div>
+                        <div class="row">
+                          "The Sleep"
+                        </div>
+                        <div class="row">
+                          "The Art of Shredding"
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 img-thumbnail">
+                  <div>
+                    <img src="wutangpic.jpeg" alt="wutangpicture" class="img-thumbnail">
+                    <div class="row">
+                      Enter The Wu-Tang
+                    </div>
+                    <div class="row">
+                      Wu-Tang Clan
+                    </div>
+                    <div class="row">
+                      Album Duration: 58:26
+                    </div>
+                    <div class="row">
+                      Rap
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <h3>Tracklist</h3>
+                      </div>
+                      <div class="row">
+                        "Bring da Ruckus"
+                      </div>
+                      <div class="row">
+                        "Shame on a ******"
+                      </div>
+                      <div class="row">
+                        "Clan in da Front"
+                      </div>
+                      <div class="row">
+                        "Wu-Tang: 7th Chamber"
+                      </div>
+                      <div class="row">
+                        "Can It Be All So Simple"
+                      </div>
+                      <div class="row">
+                        "Da Mystery of Chessboxin'"
+                      </div>
+                      <div class="row">
+                        "Wu-Tang Clan Ain't Nuthing ta F' Wit"
+                      </div>
+                      <div class="row">
+                        "C.R.E.A.M."
+                      </div>
+                      <div class="row">
+                        "Method Man"
+                      </div>
+                      <div class="row">
+                        "Protect Ya Neck"
+                      </div>
+                      <div class="row">
+                        "Tearz"
+                      </div>
+                      <div class="row">
+                        "Wu-Tang: 7th Chamber—Part II"
+                      </div>
+                      <div class="row">
+                        "Conclusion"
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 img-thumbnail">
+                  <img src="prodigypic.jpg" alt="wutangpicture" class="img-thumbnail">
+                  <div class="row">
+                    The Fat Of The Land
+                  </div>
+                  <div class="row">
+                    The Prodigy
+                  </div>
+                  <div class="row">
+                    Album Duration: 56:21
+                  </div>
+                  <div class="row">
+                    Dance
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <h3>Tracklist</h3>
+                    </div>
+                    <div class="row">
+                      "Smack My ***** Up"
+                    </div>
+                    <div class="row">
+                      "Breathe"
+                    </div>
+                    <div class="row">
+                    	"Diesel Power" 
+                    </div>
+                    <div class="row">
+                      "Funky Shit"
+                    </div>
+                    <div class="row">
+                      "Serial Thrilla"
+                    </div>
+                    <div class="row">
+                      "Mindfields"
+                    </div>
+                    <div class="row">
+                      "Narayan" 
+                    </div>
+                    <div class="row">
+                      "Firestarter"
+                    </div>
+                    <div class="row">
+                      "Climbatize"
+                    </div>
+                    <div class="row">
+                      "Fuel My Fire"
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 img-thumbnail">
+                  <img src="theclashalbum_adobespark.jfif" alt="wutangpicture" class="img-thumbnail">
+                  <div class="row">
+                    London Calling
+                  </div>
+                  <div class="row">
+                    The Clash
+                  </div>
+                  <div class="row">
+                    Album Duration: 80:46
+                  </div>
+                  <div class="row">
+                    Punk Rock
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <h3>Tracklist</h3>
+                    </div>
+                    <div class="row">
+                      "London Calling"
+                    </div>
+                    <div class="row">
+                      "Brand New Cadillac"
+                    </div>
+                    <div class="row">
+                      "Jimmy Jazz"
+                    </div>
+                    <div class="row">
+                      "Hateful"
+                    </div>
+                    <div class="row">
+                      "Rudie Can't Fail"
+                    </div>
+                    <div class="row">
+                      "Spanish Bombs"
+                    </div>
+                    <div class="row">
+                      "The Right Profile"
+                    </div>
+                    <div class="row">
+                      "Lost in the Supermarket"
+                    </div>
+                    <div class="row">
+                      "Clampdown"
+                    </div>
+                    <div class="row">
+                      "The Guns of Brixton"
+                    </div>
+                    <div class="row">
+                      "Wrong 'Em Boyo"
+                    </div>
+                    <div class="row">
+                      "Death or Glory"
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="container bg-light mt-4">
+            <div class="row">
+              <div class="col"><img src="bad album 1300.jfif" alt="wutangpicture" class="img-thumbnail"></div>
+              <div class="col">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col"><img src="souljaboybad_adobespark.jfif" alt="souljah boy pic" class="img-thumbnail"></div>
+              <div class="col">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+            </div>
+            </div>
+              
+          </div>
+
+        <div class="container">
+          <div class="row d-lex justify-content-center bg-light mt-4">
+              <div class="col-xs-6">
+                  <img class="dime" src="dime.jpg">
+              </div>
+              <div class="col-xs-6 text-center">
+                  <h3>Dimebag Darrell</h3>
+                  <p>Born and raised in Texas, Darrell 'Dimebag' Abbott is easily one of the best, most face shredding metal guitarists there has been.</p>
+                  <p>20 August 1966 - 8 December 2004</p>
+              </div>
+          </div>
+      </div>
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+        <section id="tapestry">
+        
+          <div class="container">
+              <div class="row py-5">
+                  <div class="col-12">
+                      <h1 class="text-center">Album Art</h1>
+                  </div>
+                  
+                  <div class="col-12 d-flex album-tapestry">  <!--added dflex for visibility-->
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                      <img src="pantera pic.jpg" class="img-fluid squared">
+                     
+  
+                  </div>
+              </div>
+          </div>
+              
+      </section>
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+
+      <footer class="footer"><h3>Thanks for visiting!</h3><div class="footersocial"><a href="#" class="fa fa-facebook icon"></a>
+        <a href="#" class="fa fa-twitter"></a></div></footer>
+
+    <!-- ############ EXTRA:
+        EXERCISE 9
+            Create an album details area that is going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+
+    <!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
+        -->
+  </body>
+</html>
